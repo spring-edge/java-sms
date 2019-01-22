@@ -1,23 +1,24 @@
-package com.smsapi;
-
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.io.*;
 import java.net.URLEncoder;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
 
-public class smsapi {
+public class Smsapi {
 	
 	static String working_key ;
 	static String sender_id;
 	String mob_no;
 	String message;
+	String api_url, api_dev;
 
 	public  void setparams(String apikey,String senderid)
 	{ 
 		working_key	=	apikey;
 		sender_id	= 	senderid;
-		api_dev		=	'https://www.springedge.com/';
-		api_url		= 	'http://instantalerts.co/api/web';
+		api_dev		=	"https://www.springedge.com/";
+		api_url		= 	"http://instantalerts.co/api/web";
 	}
 
 	public String process_sms(String mob_no,String message) throws IOException, KeyManagementException, NoSuchAlgorithmException
@@ -46,9 +47,8 @@ public class smsapi {
 	}
 
 
-	public  void send_sms(String mob_no,String message) throws IOException, KeyManagementException, NoSuchAlgorithmException
+	public  String send_sms(String mob_no,String message) throws IOException, KeyManagementException, NoSuchAlgorithmException
 	{
-		process_sms(mob_no, message, );  										
+		return process_sms(mob_no, message);  										
 	}
-	     
 }
