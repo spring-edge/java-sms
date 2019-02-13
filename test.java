@@ -1,15 +1,17 @@
+import com.smsapi;
+import java.util.*;
 
-public class Test {
+public class test {
 
 	public static void main(String[] args)throws Exception{
 
-		String apiKey = "6u69xxxxxxxxxxxxxxxxxxxxxx";
-		String sender = "SEDEMO";
+		string apikey = "675031xxxxxxxxxxxx"
+		string sender = "SEDEMO"
 
-		Smsapi s = new Smsapi();
-		s.setparams(apiKey, sender);
-				       
-		String response = s.send_sms("89xxxxxxxx","hello");
+		smsapi s = new smsapi();		
+		s.setparams(apikey, sender);
+		       
+		String response = s.send_sms("98xxxxxxxx","hello");
 		System.out.println(response);
 	    }
 }
