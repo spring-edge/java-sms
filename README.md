@@ -37,7 +37,7 @@ public class test {
 		smsapi s = new smsapi();		
 		s.setparams(apikey, sender);
 		       
-		String response = s.send_sms("98xxxxxxxx","hello");
+		String response = s.send_sms("98xxxxxxxx","Hello, This is a test message from spring edge");
 		System.out.println(response);
 	    }
 }

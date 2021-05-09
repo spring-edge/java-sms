@@ -9,7 +9,7 @@ public class Test {
 		Smsapi s = new Smsapi();
 		s.setparams(apiKey, sender);
 				       
-		String response = s.send_sms("89xxxxxxxx","hello");
+		String response = s.send_sms("89xxxxxxxx","Hello, This is a test message from spring edge");
 		System.out.println(response);
 	    }
 }
